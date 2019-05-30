@@ -6,8 +6,6 @@ My long-term vision is to enable long-term deployments of robots performing task
 
 === Countering Failures through Resilient Coordination
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/tIBxavsiHzM" frameborder="0" allowfullscreen></iframe>
-
 . *L. Zhou*, and P. Tokekar, “[https://www.raas.ece.vt.edu/wordpress/wp-content/uploads/2019/04/MRS19_full.pdf An Approximation Algorithm for Distributed Resilient Submodular Maximization],” /The 2nd International Symposium on Multi-Robot and Multi-Agent Systems (MRS)/, New Brunswick, USA, 2019. (Submitted).
 . *L. Zhou*, V. Tzoumas, G. J. Pappas and P. Tokekar, “[https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8534468 Resilient Active Target Tracking with Multiple Robots],” /IEEE Robotics and Automation Letters (RA-L)/, 4.1 (2019): 129-136, and /IEEE International Conference on Robotics and Automation (ICRA)/, Montreal, Canada, 2019.
 
