@@ -1,0 +1,52 @@
+# jemdoc: menu{MENU}{research.html}
+== Multi-Robot Coordination
+
+== Research Statement
+My long-term vision is to enable long-term deployments of robots performing tasks in real-world. Here, the robots have to deal with uncertain knowledge of the environment. The environment itself may be changing. Robots may fail or if they are operating in adversarial environments, they may get attacked. My goal is to devise algorithms to make the robots resilient to failure and be aware of the loss from uncertainty. To do that, the robots may have to communicate with each other to replan. I will specifically focus on strategies that are selective in who the robots communicate with and when to communicate. 
+
+=== Countering Failures through Resilient Coordination
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/tIBxavsiHzM" frameborder="0" allowfullscreen></iframe>
+
+. *L. Zhou*, and P. Tokekar, “[https://www.raas.ece.vt.edu/wordpress/wp-content/uploads/2019/04/MRS19_full.pdf An Approximation Algorithm for Distributed Resilient Submodular Maximization],” /The 2nd International Symposium on Multi-Robot and Multi-Agent Systems (MRS)/, New Brunswick, USA, 2019. (Submitted).
+. *L. Zhou*, V. Tzoumas, G. J. Pappas and P. Tokekar, “[https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8534468 Resilient Active Target Tracking with Multiple Robots],” /IEEE Robotics and Automation Letters (RA-L)/, 4.1 (2019): 129-136, and /IEEE International Conference on Robotics and Automation (ICRA)/, Montreal, Canada, 2019.
+
+
+=== Managing Risk through Stochastic Submodular Optimization
+
+. *L. Zhou*, and P. Tokekar, “[https://arxiv.org/pdf/1807.09358.pdf An Approximation Algorithm for Risk-averse Submodular Optimization],” /Workshop on the Algorithmic Foundations of Robotics (WAFR)/, Merida, Mexico, 2018. (In Press).
+
+=== Reducing Communication by Self-Triggered Control
+
+. *L. Zhou*, and P. Tokekar, “[https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8466114 Active Target Tracking with Self-Triggered Communications in Multi-Robot Teams],” /IEEE Transactions on Automation Science and Engineering (T-ASE)/, 99 (2018): 1-12.
+. *L. Zhou*, and P. Tokekar, “[https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7989244 Active Target Tracking with Self-Triggered Communications],” /IEEE International Conference on Robotics and Automation (ICRA)/, Singapore, 2017.
+
+
+=== Reducing Communication by Forming Sensor Subsets
+
+. *L. Zhou*, and P. Tokekar, “[https://arxiv.org/pdf/1709.06428.pdf Sensor Assignment Algorithms to Improve Observability while Tracking Targets],” /IEEE Transactions on Robotics (TRO)/. (To appear).
+. *L. Zhou*, and P. Tokekar, “[https://arxiv.org/pdf/1706.00871.pdf A Lower Bound on Observability for Target Tracking with Range Sensors and its Application to Sensor Assignment],” /IEEE International Conference on Robotics and Automation Workshop on Multi-robot Perception-driven Control and Planning (ICRA)/, Singapore, 2017.
+
+
+=== Team Formation by Distributed Model Predictive Control
+
+
+. *L. Zhou*, and S. Li, “[https://onlinelibrary.wiley.com/doi/pdf/10.1002/rnc.3606 Distributed model predictive control for multi-agent flocking via neighbor screening optimization],” /International Journal of Robust and Nonlinear Control (IJRNC)/, 27(9): pp. 1690-705, 2017.
+. *L. Zhou*, and S. Li, “[https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7166509 Distributed model predictive control for consensus of sampled-data multi-agent systems with double-integrator dynamics],” /IET Control Theory & Applications (IET)/, 9(12): pp. 1774-80, 2015.
+. *L. Zhou*, and S. Li, “[https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7260840 Cooperative control of linear systems with coupled constraints via distributed model predictive control],” /IEEE Chinese Control Conference (CCC)/, Hangzhou, China, 2015.
+
+
+
+== Collaboration Work
+
+=== Tree Search Application in Robot-Target Games
+
+. Z. Zhang, J.Lee, JM Smereka, Y. Sung, *L. Zhou* and P. Tokekar, “[https://arxiv.org/pdf/1807.09437.pdf Minimizing detectability and maximizing visibility],” /IEEE International Conference on Robotics and Automation (ICRA)/, Montreal, Canada, 2019.
+. Z. Zhang, *L. Zhou* and P. Tokekar, “[https://arxiv.org/pdf/1809.04756.pdf Strategies to Inject Spoofed Measurement Data],” /IEEE Transactions on Automatic Control (TAC)/. (Submitted).
+. Z. Zhang, *L. Zhou*, and P. Tokekar, “[https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8430817 Strategies to Design Signals to Spoof Kalman Filter],” /IEEE American Control Conference (ACC)/, Milwaukee, USA, 2018.
+
+
+
+# === Visually-Grounded Natural Language (Robot) Navigation 
+
+
