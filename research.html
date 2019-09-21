@@ -25,34 +25,34 @@
 <h1>Multi-Robot Coordination</h1>
 </div>
 <h2>Research Statement</h2>
-<p>My long-term vision is to enable long-term deployments of robots performing tasks in real-world. Here, the robots have to deal with uncertain knowledge of the environment. The environment itself may be changing. Robots may fail or if they are operating in adversarial environments, they may get attacked. My goal is to devise algorithms to make the robots resilient to failure and be aware of the loss from uncertainty. To do that, the robots may have to communicate with each other to replan. I will specifically focus on strategies that are selective in who the robots communicate with and when to communicate. </p>
-<h3>Countering Failures through Resilient Coordination</h3>
-<ol>
-<li><p><b>L. Zhou</b>, and P. Tokekar, “<a href="https://www.raas.ece.vt.edu/wordpress/wp-content/uploads/2019/04/MRS19_full.pdf">An Approximation Algorithm for Distributed Resilient Submodular Maximization</a>,” <i>The 2nd International Symposium on Multi-Robot and Multi-Agent Systems (MRS)</i>, New Brunswick, USA, 2019. (Submitted).</p>
-</li>
-<li><p><b>L. Zhou</b>, V. Tzoumas, G. J. Pappas and P. Tokekar, “<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8534468">Resilient Active Target Tracking with Multiple Robots</a>,” <i>IEEE Robotics and Automation Letters (RA-L)</i>, 4.1 (2019): 129-136, and <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Montreal, Canada, 2019.</p>
-</li>
-</ol>
+<p>My vision is to enable long-term deployments of robots performing tasks in real-world. Here, the robots have to deal with uncertain knowledge of the environment. The environment itself may be changing. Robots may fail or if they are operating in adversarial environments, they may get attacked. My goal is to devise algorithms to make the robots resilient to failure and be aware of the loss from uncertainty. To do that, the robots may have to communicate with each other to replan. I will specifically focus on strategies that are selective in who the robots communicate with and when to communicate. </p>
+<h3>Countering Failures through Robust Coordination</h3>
+<img src="photos/uav_target.png" width="280", hspace="90"></img><img src="photos/tra_cover.png" width="300"></img>
+<br>
+<iframe width="410" height="200" src="https://www.youtube.com/embed/0pGrg514_eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe> <iframe width="410" height="200" src="https://www.youtube.com/embed/T0Hb0UURCLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- 430*242 -->
+<br>
+<p>The problem of target tracking with multiple robots consists of actively planning the motion of robots to track targets. A major challenge for practical deployments is to make the robots robust to failures. In particular, robots may be attacked in adversarial scenarios, or their sensors may fail or get occluded. Here, we introduce planning algorithms for multi-target tracking that are robust to such failures. In general, robust target tracking is computationally hard. Contrary to the case where there are no failures, no scalable approximation algorithms are known for robust target tracking when the targets are indistinguishable, or unknown in number, or with unknown motion model.
+<br />
+<br>
+We provide both centralized and distributed robust algorithms to counter such failures/attacks. Our algorithms have the following properties: First, they achieve maximal robustness, since the algorithms are valid for any number of failures. Second, the centralized robust algorithm runs as fast as the standard greedy algorithm, and the distributed robust algorithm runs even faster. Third, they provide provable approximation bounds on the tracking performance. We quantify our algorithms' approximation performance using a novel notion of curvature for monotone set functions subject to matroid constraints. Finally, we demonstrate the efficacy of our algorithms through MATLAB and Gazebo simulations.
+<br />[<a href="pdfs/RAL_target.pdf" target=&ldquo;blank&rdquo;><i>RA-L+ICRA'19</i></a>] [<a href="pdfs/dis_robust.pdf" target=&ldquo;blank&rdquo;><i>RA-L+ICRA'20, Submitted</i></a>]<!--[<a href="https://youtu.be/xfMZloeKo6c" target=&ldquo;blank&rdquo;>Video</a>]--></p>
 <h3>Managing Risk through Stochastic Submodular Optimization</h3>
-<ol>
-<li><p><b>L. Zhou</b>, and P. Tokekar, “<a href="https://arxiv.org/pdf/1807.09358.pdf">An Approximation Algorithm for Risk-averse Submodular Optimization</a>,” <i>Workshop on the Algorithmic Foundations of Robotics (WAFR)</i>, Merida, Mexico, 2018. (In Press).</p>
-</li>
-</ol>
+<img src="photos/simple_mod_exp.png" width="400"></img>
+<br>
+<p>We study the problem of incorporating risk while making combinatorial decisions under uncertainty. We formulate a discrete submodular maximization problem for selecting a set using Conditional-Value-at-Risk (CVaR), a risk metric commonly used in financial analysis. While CVaR has recently been used in optimization of linear cost functions in robotics, we take the first stages towards extending this to discrete submodular optimization and provide several positive results. Specifically, we propose the Sequential Greedy Algorithm that provides an approximation guarantee on finding the maxima of the CVaR cost function under a matroidal constraint. The approximation guarantee shows that the solution produced by our algorithm is within a constant factor of the optimal and an additive term that depends on the optimal. Our analysis uses the curvature of the submodular set function, and proves that the algorithm runs in polynomial time. This formulates a number of combinatorial optimization problems that appear in robotics. We use two such problems, vehicle assignment under uncertainty for mobility-on-demand and sensor selection with failures for environmental monitoring, as case studies to demonstrate the efficacy of our formulation.
+<br />[<a href="pdfs/WAFR_risk.pdf" target=&ldquo;blank&rdquo;><i>WAFR'18</i></a>]
 <h3>Reducing Communication by Self-Triggered Control</h3>
-<ol>
-<li><p><b>L. Zhou</b>, and P. Tokekar, “<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8466114">Active Target Tracking with Self-Triggered Communications in Multi-Robot Teams</a>,” <i>IEEE Transactions on Automation Science and Engineering (T-ASE)</i>, 99 (2018): 1-12.</p>
-</li>
-<li><p><b>L. Zhou</b>, and P. Tokekar, “<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7989244">Active Target Tracking with Self-Triggered Communications</a>,” <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Singapore, 2017.</p>
-</li>
-</ol>
+<iframe width="410" height="200" src="https://www.youtube.com/embed/UcsRCc9cfns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<p>We study the problem of reducing the amount of communication in decentralized target tracking. We focus on the scenario, where a team of robots is allowed to move on the boundary of the environment. Their goal is to seek a formation so as to best track a target moving in the interior of the environment. The robots are capable of measuring distances to the target. Decentralized control strategies have been proposed in the past, which guarantees that the robots asymptotically converge to the optimal formation. However, existing methods require that the robots exchange information with their neighbors at all time steps. Instead, we focus on decentralized strategies to reduce the amount of communication among robots. We propose a self-triggered communication strategy that decides when a particular robot should seek up-to-date information from its neighbors and when it is safe to operate with possibly outdated information. We prove that this strategy converges asymptotically to the desired formation when the target is stationary. For the case of a mobile target, we use a decentralized Kalman filter with covariance intersection to share the beliefs of neighboring robots. We evaluate all the approaches through simulations and a proof-of-concept experiment. 
+<br />[<a href="pdfs/ICRA_target.pdf" target=&ldquo;blank&rdquo;><i>ICRA'17</i></a>] [<a href="pdfs/TASE_target.pdf" target=&ldquo;blank&rdquo;><i>T-ASE'18</i></a>]
 <h3>Reducing Communication by Forming Sensor Subsets</h3>
-<ol>
-<li><p><b>L. Zhou</b>, and P. Tokekar, “<a href="https://arxiv.org/pdf/1709.06428.pdf">Sensor Assignment Algorithms to Improve Observability while Tracking Targets</a>,” <i>IEEE Transactions on Robotics (TRO)</i>. (To appear).</p>
-</li>
-<li><p><b>L. Zhou</b>, and P. Tokekar, “<a href="https://arxiv.org/pdf/1706.00871.pdf">A Lower Bound on Observability for Target Tracking with Range Sensors and its Application to Sensor Assignment</a>,” <i>IEEE International Conference on Robotics and Automation Workshop on Multi-robot Perception-driven Control and Planning (ICRA)</i>, Singapore, 2017.</p>
-</li>
-</ol>
-<h3>Team Formation by Distributed Model Predictive Control</h3>
+<iframe width="410" height="200" src="https://www.youtube.com/embed/Kt0yeYXyrKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<p>We study two sensor assignment problems for multi-target tracking with the goal of improving the observability of the underlying estimator. We consider various measures of the observability matrix as the assignment value function. We first study the general version where the sensors must form teams to track individual targets. If the value function is monotonically increasing and submodular, then a greedy algorithm yields a 1/2–approximation. We then study a restricted version where exactly two sensors must be assigned to each target. We present a 1/3–approximation algorithm for this problem, which holds for arbitrary value functions (not necessarily submodular or monotone). In addition to approximation algorithms, we also present various properties of observability measures. We show that the inverse of the condition number of the observability matrix is neither monotone nor submodular, but present other measures that are. Specifically, we show that the trace and rank of the symmetric observability matrix are monotone and submodular and the log determinant of the symmetric observability matrix is monotone and submodular when the matrix is nonsingular. If the target’s motion model is not known, the inverse cannot be computed exactly. Instead, we present a lower bound for distance sensors. In addition to theoretical results, we evaluate our results empirically through simulations.
+<br />[<a href="pdfs/TRO_sensor.pdf" target=&ldquo;blank&rdquo;><i>T-RO'19</i></a>]
+<!-- <h3>Team Formation by Distributed Model Predictive Control</h3>
 <ol>
 <li><p><b>L. Zhou</b>, and S. Li, “<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/rnc.3606">Distributed model predictive control for multi-agent flocking via neighbor screening optimization</a>,” <i>International Journal of Robust and Nonlinear Control (IJRNC)</i>, 27(9): pp. 1690-705, 2017.</p>
 </li>
@@ -60,8 +60,8 @@
 </li>
 <li><p><b>L. Zhou</b>, and S. Li, “<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7260840">Cooperative control of linear systems with coupled constraints via distributed model predictive control</a>,” <i>IEEE Chinese Control Conference (CCC)</i>, Hangzhou, China, 2015.</p>
 </li>
-</ol>
-<h2>Collaboration Work</h2>
+</ol> -->
+<!-- <h2>Collaboration Work</h2>
 <h3>Tree Search Application in Robot-Target Games</h3>
 <ol>
 <li><p>Z. Zhang, J.Lee, JM Smereka, Y. Sung, <b>L. Zhou</b> and P. Tokekar, “<a href="https://arxiv.org/pdf/1807.09437.pdf">Minimizing detectability and maximizing visibility</a>,” <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Montreal, Canada, 2019.</p>
@@ -70,7 +70,7 @@
 </li>
 <li><p>Z. Zhang, <b>L. Zhou</b>, and P. Tokekar, “<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8430817">Strategies to Design Signals to Spoof Kalman Filter</a>,” <i>IEEE American Control Conference (ACC)</i>, Milwaukee, USA, 2018.</p>
 </li>
-</ol>
+</ol> -->
 <div id="footer">
 <div id="footer-text">
 Page generated 2019-05-29 22:26:58 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
