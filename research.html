@@ -27,7 +27,7 @@
 <h2>Research Statement</h2>
 <p>My vision is to enable long-term deployments of robots performing tasks in real-world. Here, the robots have to deal with uncertain knowledge of the environment. The environment itself may be changing. Robots may fail or if they are operating in adversarial environments, they may get attacked. My goal is to devise algorithms to make the robots resilient to failure and be aware of the loss from uncertainty. To do that, the robots may have to communicate with each other to replan. I will specifically focus on strategies that are selective in who the robots communicate with and when to communicate. </p>
 <h3>Countering Failures through Robust Coordination</h3>
-<img src="photos/uav_target.png" width="280", hspace="90"></img><img src="photos/tra_cover.png" width="300"></img>
+<img src="photos/uav_target.png" width="260", hspace="90"></img><img src="photos/tra_cover.png" width="280"></img>
 <br>
 <iframe width="410" height="200" src="https://www.youtube.com/embed/0pGrg514_eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe> <iframe width="410" height="200" src="https://www.youtube.com/embed/T0Hb0UURCLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- 430*242 -->
@@ -43,34 +43,45 @@ We provide both centralized and distributed robust algorithms to counter such fa
 <p>We study the problem of incorporating risk while making combinatorial decisions under uncertainty. We formulate a discrete submodular maximization problem for selecting a set using Conditional-Value-at-Risk (CVaR), a risk metric commonly used in financial analysis. While CVaR has recently been used in optimization of linear cost functions in robotics, we take the first stages towards extending this to discrete submodular optimization and provide several positive results. Specifically, we propose the Sequential Greedy Algorithm that provides an approximation guarantee on finding the maxima of the CVaR cost function under a matroidal constraint. The approximation guarantee shows that the solution produced by our algorithm is within a constant factor of the optimal and an additive term that depends on the optimal. Our analysis uses the curvature of the submodular set function, and proves that the algorithm runs in polynomial time. This formulates a number of combinatorial optimization problems that appear in robotics. We use two such problems, vehicle assignment under uncertainty for mobility-on-demand and sensor selection with failures for environmental monitoring, as case studies to demonstrate the efficacy of our formulation.
 <br />[<a href="pdfs/WAFR_risk.pdf" target=&ldquo;blank&rdquo;><i>WAFR'18</i></a>]
 <h3>Reducing Communication by Self-Triggered Control</h3>
+<iframe width="410" height="200" src="https://www.youtube.com/embed/HO2dRSLk-Vc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="410" height="200" src="https://www.youtube.com/embed/UcsRCc9cfns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <p>We study the problem of reducing the amount of communication in decentralized target tracking. We focus on the scenario, where a team of robots is allowed to move on the boundary of the environment. Their goal is to seek a formation so as to best track a target moving in the interior of the environment. The robots are capable of measuring distances to the target. Decentralized control strategies have been proposed in the past, which guarantees that the robots asymptotically converge to the optimal formation. However, existing methods require that the robots exchange information with their neighbors at all time steps. Instead, we focus on decentralized strategies to reduce the amount of communication among robots. We propose a self-triggered communication strategy that decides when a particular robot should seek up-to-date information from its neighbors and when it is safe to operate with possibly outdated information. We prove that this strategy converges asymptotically to the desired formation when the target is stationary. For the case of a mobile target, we use a decentralized Kalman filter with covariance intersection to share the beliefs of neighboring robots. We evaluate all the approaches through simulations and a proof-of-concept experiment. 
 <br />[<a href="pdfs/ICRA_target.pdf" target=&ldquo;blank&rdquo;><i>ICRA'17</i></a>] [<a href="pdfs/TASE_target.pdf" target=&ldquo;blank&rdquo;><i>T-ASE'18</i></a>]
 <h3>Reducing Communication by Forming Sensor Subsets</h3>
-<iframe width="410" height="200" src="https://www.youtube.com/embed/Kt0yeYXyrKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="410" height="200" src="https://www.youtube.com/embed/Kt0yeYXyrKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="410" height="200" src="https://www.youtube.com/embed/YHz-NRubaAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <p>We study two sensor assignment problems for multi-target tracking with the goal of improving the observability of the underlying estimator. We consider various measures of the observability matrix as the assignment value function. We first study the general version where the sensors must form teams to track individual targets. If the value function is monotonically increasing and submodular, then a greedy algorithm yields a 1/2–approximation. We then study a restricted version where exactly two sensors must be assigned to each target. We present a 1/3–approximation algorithm for this problem, which holds for arbitrary value functions (not necessarily submodular or monotone). In addition to approximation algorithms, we also present various properties of observability measures. We show that the inverse of the condition number of the observability matrix is neither monotone nor submodular, but present other measures that are. Specifically, we show that the trace and rank of the symmetric observability matrix are monotone and submodular and the log determinant of the symmetric observability matrix is monotone and submodular when the matrix is nonsingular. If the target’s motion model is not known, the inverse cannot be computed exactly. Instead, we present a lower bound for distance sensors. In addition to theoretical results, we evaluate our results empirically through simulations.
 <br />[<a href="pdfs/TRO_sensor.pdf" target=&ldquo;blank&rdquo;><i>T-RO'19</i></a>]
-<!-- <h3>Team Formation by Distributed Model Predictive Control</h3>
-<ol>
-<li><p><b>L. Zhou</b>, and S. Li, “<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/rnc.3606">Distributed model predictive control for multi-agent flocking via neighbor screening optimization</a>,” <i>International Journal of Robust and Nonlinear Control (IJRNC)</i>, 27(9): pp. 1690-705, 2017.</p>
-</li>
-<li><p><b>L. Zhou</b>, and S. Li, “<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7166509">Distributed model predictive control for consensus of sampled-data multi-agent systems with double-integrator dynamics</a>,” <i>IET Control Theory &amp; Applications (IET)</i>, 9(12): pp. 1774-80, 2015.</p>
-</li>
-<li><p><b>L. Zhou</b>, and S. Li, “<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7260840">Cooperative control of linear systems with coupled constraints via distributed model predictive control</a>,” <i>IEEE Chinese Control Conference (CCC)</i>, Hangzhou, China, 2015.</p>
-</li>
-</ol> -->
-<!-- <h2>Collaboration Work</h2>
-<h3>Tree Search Application in Robot-Target Games</h3>
-<ol>
-<li><p>Z. Zhang, J.Lee, JM Smereka, Y. Sung, <b>L. Zhou</b> and P. Tokekar, “<a href="https://arxiv.org/pdf/1807.09437.pdf">Minimizing detectability and maximizing visibility</a>,” <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, Montreal, Canada, 2019.</p>
-</li>
-<li><p>Z. Zhang, <b>L. Zhou</b> and P. Tokekar, “<a href="https://arxiv.org/pdf/1809.04756.pdf">Strategies to Inject Spoofed Measurement Data</a>,” <i>IEEE Transactions on Automatic Control (TAC)</i>. (Submitted).</p>
-</li>
-<li><p>Z. Zhang, <b>L. Zhou</b>, and P. Tokekar, “<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8430817">Strategies to Design Signals to Spoof Kalman Filter</a>,” <i>IEEE American Control Conference (ACC)</i>, Milwaukee, USA, 2018.</p>
-</li>
-</ol> -->
+<h3>Team Formation by Distributed Model Predictive Control</h3>
+<img src="photos/flocking1.png" width="360", hspace="10">
+</img><img src="photos/flocking2.png" width="360",hspace="10"></img>
+<img src="photos/flocking3.png" width="360"></img>
+<br>
+This study presents a distributed model predictive control (MPC) strategy to achieve flocking of multi-agent systems. Based on the relative motion between each pair of neighboring agents, we introduce a neighbor screening protocol, by which each agent only focuses on its neighbors, which have the relative motion that violates the formation of flocks. Then, a truly distributed MPC flocking algorithm (Algorithm 1) is designed with consideration of neighbor screening mechanism. Specifically, at each sampling instant, each agent monitors the information in the networked system, finds its neighbors to form its subsystem, determines the screened neighbor set, and optimizes its plan by collecting the position states within the screened subsystem. And geometric properties of the optimal path are used to guarantee the formation of the flock without inter- agent collision. Finally, the performance and advantage of the proposed distributed MPC flocking strategy are vividly verified by the simulation results.
+<br />
+[<a href="pdfs/IJRNC_flocking.pdf" target=&ldquo;blank&rdquo;><i>IJRNC'17</i></a>] [<a href="pdfs/IET_consensus.pdf" target=&ldquo;blank&rdquo;><i>IET'15</i></a>] [<a href="pdfs/CCC_2015.pdf" target=&ldquo;blank&rdquo;><i>CCC'15</i></a>] 
+
+<h2>Collaboration Work</h2>
+
+<h3>Tree Search Application in Robot-Target Game</h3>
+<img src="photos/tree_search.png" width="600">
+<br>
+We introduce and study the problem of planning a trajectory for an agent to carry out a scouting mission while avoiding being detected by an adversarial guard. This introduces a multi-objective version of classical visibility-based target search and pursuit-evasion problem. In our formulation, the agent receives a positive reward for increasing its visibility (by exploring new regions) and a negative penalty every time it is detected by the guard. The objective is to find a finite-horizon path for the agent that balances the trade off between maximizing visibility and minimizing detectability.
+<br />
+<br>
+We model this problem as a discrete, sequential, two-player, zero-sum game. We use two types of game tree search algorithms to solve this problem: minimax search tree and Monte-Carlo search tree. Both search trees can yield the optimal policy but may require possibly exponential computational time and space. We propose several pruning techniques to reduce the computational cost while still preserving optimality guarantees. Simulation results show that the proposed strategy prunes approximately three orders of magnitude nodes as compared to the brute-force strategy. We also find that the Monte-Carlo search tree saves approximately one order of computational time as compared to the minimax search tree.
+<br />
+[<a href="pdfs/ICRA_tree.pdf" target=&ldquo;blank&rdquo;><i>ICRA'19</i></a>]
+
+<h3> Spoofing Strategy in Robot-Target Game</h3>
+<img src="photos/spoof1.png" width="330", hspace="50">
+</img><img src="photos/spoof2.png" width="360"></img>
+<br>
+Abstract—We study the problem of designing spoofing signals to corrupt and mislead the output of a Kalman filter. Unlike existing works that focus on detection and filtering algorithms for the observer, we study the problem from the attacker’s point-of-view. In our model, the attacker can corrupt the measurements by adding spoofing signals. The attacker seeks to create a separation between the estimate of the Kalman filter with and without spoofing signals. We present a number of results on how to generate such spoofing signals, while minimizing the signal magnitude. The resulting algorithms are evaluated through simulations along with theoretical proofs.
+<br />
+[<a href="pdfs/ACC_spoof.pdf" target=&ldquo;blank&rdquo;><i>ACC'18</i></a>] [<a href="pdfs/TAC_spoof.pdf" target=&ldquo;blank&rdquo;><i>TAC Submitted</i></a>]
+
 <div id="footer">
 <div id="footer-text">
 Page generated 2019-05-29 22:26:58 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
