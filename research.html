@@ -40,7 +40,7 @@ Today, robotics and autonomous systems have been increasingly used in various ar
 <a href="https://link.springer.com/article/10.1007/s43154-021-00046-5" target=&ldquo;blank&rdquo;>[Current Robotics Reports, 2021]</a>: Review on multi-robot coordination and planning in uncertain and adversarial environments.
 
 <h2>Large-Scale, Decentralized Multi-Robot Coordination through Graph Neural Networks</h2>
-<p><img src="photos/learning_framework.jpg" width="790"></img> <br>
+<p><img src="photos/learning_framework.jpg" width="800"></img> <br>
 For long-term operation in large-scale environments, we need scalable and decentralized algorithms. However, with local communications, these decentralized algorithms typically perform worse than their centralized counterparts. Recently, I have been exploring the use of <b>graph neural networks (GNNs)</b> as a tool for automatically synthesizing decentralized planning strategies which are trained to imitate centralized experts.
 To this end, I developed a <b>GNN-based imitation learning framework</b> that learns <b>decentralized decision-making</b> for the robots from a <b>centralized expert</b> in <b>small-scale</b> scenarios and <b>generalizes well</b> the learned policies to <b>larger-scale</b> scenarios, e.g., larger environments and larger networks of robots. 
 <p />
@@ -48,16 +48,16 @@ To this end, I developed a <b>GNN-based imitation learning framework</b> that le
 
 <h2>Countering Attacks and Failures through Resilient Coordination</h2>
 <!-- <img src="photos/uav_target.png" width="260", hspace="90"></img><img src="photos/tra_cover.png" width="280"></img> -->
-<iframe width="410" height="200" src="https://www.youtube.com/embed/0pGrg514_eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe> <iframe width="380" height="200" src="https://www.youtube.com/embed/T0Hb0UURCLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- 430*242 -->
-</iframe> <iframe width="360" height="200" src="https://youtube.com/embed/hKOrFYUVjlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<!-- <iframe width="410" height="200" src="https://www.youtube.com/embed/0pGrg514_eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> -->
+</iframe> <iframe width="400" height="220" src="https://www.youtube.com/embed/T0Hb0UURCLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- 430*242 -->
+</iframe> <iframe width="400" height="220" src="https://youtube.com/embed/hKOrFYUVjlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <p>Most of the research on robot resiliency focuses on countering deceptive attacks that mislead the robot team. Instead, I have so far focused against <i>denial-of-service (DoS)</i> attacks and failures that can make robots fail or compromise their sensors. I aimed at guaranteeing team performance even if some robots in the team get DoS attacks. To this end, I formulated <b>game-theoretic problems</b> between the robots and the adversary, and designed <b>the first provably near-optimal approximation algorithms for robust combinatorial optimization</b> in various settings including centralized, decentralized communication and short-horizon, long-horizon planning. These algorithms enabled <b>DoS-resilient multi-robot planning</b> in data collection scenarios such as target tracking and environmental exploration. Apart from sensor attacks, the communications among robots can be easily jammed and disrupted by the adversary. Thus, I have recently investigated <b>near-optimal resilient algorithms</b> to protect the team performance from both <i>sensor and communication attacks/failures</i>.
 </p>
 <p>Besides the aforementioned resilient algorithms that can <b>withstand</b> attacks/failures, I am also interested in how robots should react to and recover from attacks/failures. To this end, we developed a resilient coordination framework that enables robots to <b>adapt and recover</b> by reconfiguring team resources to compensate for the performance loss induced by robot failures.
 </p>
-<a href="pdfs/RAL_target.pdf" target=&ldquo;blank&rdquo;>[RA-L+ICRA'19]</a>: Robust submodular maximization against robot/sensor attacks/failures (left video);
+<a href="pdfs/RAL_target.pdf" target=&ldquo;blank&rdquo;>[RA-L+ICRA'19]</a>: Robust submodular maximization against robot/sensor attacks/failures;
 
-<br><a href="https://ieeexplore.ieee.org/document/9197243" target=&ldquo;blank&rdquo;>[ICRA'20]</a>,<a href="https://arxiv.org/abs/1910.01208" target=&ldquo;blank&rdquo;> [T-RO submission]</a>: Decentralized (clique-based) robust submodular maximization against robot/sensor attacks/failures (middle video); 
+<br><a href="https://ieeexplore.ieee.org/document/9197243" target=&ldquo;blank&rdquo;>[ICRA'20]</a>,<a href="https://arxiv.org/abs/1910.01208" target=&ldquo;blank&rdquo;> [T-RO submission]</a>: Decentralized (clique-based) robust submodular maximization against robot/sensor attacks/failures (left video); 
 
 <br> <a href="https://ieeexplore.ieee.org/abstract/document/9431677" target=&ldquo;blank&rdquo;>[RA-L'21]</a>: Distributed (consensus-based) robust submodular maximization against robot/sensor attacks/failures;
 
@@ -70,9 +70,9 @@ To this end, I developed a <b>GNN-based imitation learning framework</b> that le
 
 <h2>Managing Risk through Stochastic Submodular Optimization</h2>
 
-<img src="photos/simple_mod_exp.jpg" width="400"></img> 
+<img src="photos/simple_mod_exp.jpg" width="400" height="240"></img> 
 <!-- <img src="photos/street_risk.png" width="220" hspace="40"></img> -->
-</iframe> <iframe width="410" height="262" src="https://www.youtube.com/embed/atyBxxpqmCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+</iframe> <iframe width="400" height="232" src="https://www.youtube.com/embed/atyBxxpqmCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 <p>In addition to failures caused by DoS attacks, robots can fail randomly, which adds <b>uncertainty</b> to their performance. More broadly, the uncertainty comes from noisy robot sensing, imperfect robot motion, and unknown environmental conditions. The uncertainty usually puts robots' performance at risk.</p>
 
@@ -91,8 +91,8 @@ To this end, I developed a <b>GNN-based imitation learning framework</b> that le
 
 <h2>Reducing Communication by Self-Triggered Control and Forming Subteams</h2>
 <!-- <iframe width="410" height="200" src="https://www.youtube.com/embed/HO2dRSLk-Vc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-<iframe width="410" height="200" src="https://www.youtube.com/embed/UcsRCc9cfns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="410" height="200" src="https://www.youtube.com/embed/YHz-NRubaAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="220" src="https://www.youtube.com/embed/UcsRCc9cfns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="220" src="https://www.youtube.com/embed/YHz-NRubaAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <p> Many challenges exist in the long-term autonomy of multi-robot systems, such as limited onboard battery capacity, heavy computation and communication load, and dangerous and uncertain outer environments. Among these challenges, my research focuses on <b>reducing communication costs</b> during coordination. Particularly, leveraging <b>self-triggered control</b>, I designed a <b>"when to communicate"</b> strategy that decides when a robot in the team should communicate to seek up-to-date information and when it is safe to operate with possibly outdated information. Even though the communication is restricted, this self-triggered strategy achieves similar performance to the all-time communication strategy, in theory, simulations, and a proof-of-concept experiment. To further reduce communication costs, I devised a <b>"who to communicate with"</b> strategy by forming robot subteams.  I proposed a <b>polynomial-time assignment algorithm</b> that provides a <b>provably near-optimal performance</b> even though the robots can only communicate within subteams.</p>
 
@@ -107,9 +107,9 @@ To this end, I developed a <b>GNN-based imitation learning framework</b> that le
 
 
 <h2>Team Formation by Distributed Model Predictive Control</h2>
-<img src="photos/flocking1.png" width="360", hspace="10">
-</img><img src="photos/flocking2.png" width="360",hspace="10"></img>
-<img src="photos/flocking3.png" width="360"></img>
+<img src="photos/flocking1.png" width="397"  hspace="5"></img>
+<!-- <img src="photos/flocking2.png" width="360" hspace="10"></img> -->
+<img src="photos/flocking3.png" width="397" ></img>
 <p>We design a <b>distributed model predictive control (MPC)</b> strategy to achieve flocking of multi-agent systems. Based on the relative motion between each pair of neighboring agents, we introduce a <b>neighbor screening protocol</b>, by which each agent only focuses on its neighbors, which have the relative motion that violates the formation of flocks. Then, a truly distributed MPC flocking algorithm is designed with consideration of neighbor screening mechanism. Specifically, at each sampling instant, each agent monitors the information in the networked system, finds its neighbors to form its subsystem, determines the screened neighbor set, and optimizes its plan by collecting the position states within the screened subsystem. Geometric properties of the optimal path are used to guarantee the formation of the flock without inter-agent collision. Finally, the performance and advantage of the proposed distributed MPC flocking strategy are vividly verified by the simulation results.</p>
 
 <a href="pdfs/IJRNC_flocking.pdf" target=&ldquo;blank&rdquo;>[IJRNC'17]</a>: Distributed model predictive control for multi-agent flocking via neighbor screening optimization (figures above). 
@@ -123,7 +123,7 @@ To this end, I developed a <b>GNN-based imitation learning framework</b> that le
 <h2>Collaboration Work</h2>
 
 <h3>Tree Search Application in Robot-Target Game</h3>
-<img src="photos/tree_search.png" width="600">
+<img src="photos/tree_search.png" width="800">
 <p>We introduce and study the problem of planning a trajectory for an agent to carry out a scouting mission while avoiding being detected by an adversarial guard. This introduces a multi-objective version of classical visibility-based target search and pursuit-evasion problem. In our formulation, the agent receives a positive reward for increasing its visibility (by exploring new regions) and a negative penalty every time it is detected by the guard. The objective is to find a finite-horizon path for the agent that balances the trade off between maximizing visibility and minimizing detectability.
 <p/>
 <p>
@@ -132,7 +132,7 @@ We model this problem as a <b>discrete, sequential, two-player, zero-sum game</b
 <a href="pdfs/ICRA_tree.pdf" target=&ldquo;blank&rdquo;>[ICRA'19], <a href="https://link.springer.com/article/10.1007/s10514-020-09963-4" target=&ldquo;blank&rdquo;>[AURO'21]</a>: Game tree search for minimizing detectability and maximizing visibility.
 
 <h3> Spoofing Strategy in Robot-Target Game</h3>
-<img src="photos/spoof1.png" width="330", hspace="50">
+<img src="photos/spoof1.png" width="360" hspace="40">
 </img><img src="photos/spoof2.png" width="360"></img>
 <p>
 We study the problem of <b>designing spoofing signals to corrupt and mislead the output of a Kalman filter</b>. Unlike existing works that focus on detection and filtering algorithms for the observer, we study the problem from the attacker’s point-of-view. In our model, the attacker can corrupt the measurements by adding spoofing signals. The attacker seeks to create a separation between the estimate of the Kalman filter with and without spoofing signals. We present a number of results on how to generate such spoofing signals, while minimizing the signal magnitude. The resulting algorithms are evaluated through simulations along with theoretical proofs.
